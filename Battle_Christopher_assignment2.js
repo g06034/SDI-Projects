@@ -1,1 +1,3 @@
-alert("JavaScript works!");
+//alert("JavaScript works!");
+
+// Author: Christopher Battle 
