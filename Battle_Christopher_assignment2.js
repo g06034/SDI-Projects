@@ -7,12 +7,24 @@
 
 // My variables 
 var myEssentials = [ "Government Contractor ID", "Wallet", "iPhone charger" ];
-var mySandwhich = true;
+var mySandwich = true;
 var myLunch = [ "Sandwhich", "Chips", "Fruit Cup", "Chewy Bar", "Water Bottle" ];
 var myWife = "Eva";
+var ImReady = "That means one less step"
 
 // My outputs
-console.log("Eva " + "did you make my sandwhich last night" + ".");
+console.log("My alarm on my iPhone goes off");
+console.log( myWife + " did you make my sandwich last night" + ".");
+
+//conditional
+if (myWife + mySandwich == true)
+        {
+        ImReady === true
+        }
+        else{
+        console.log("I need to make a sandwich for lunch")
+        }
+
 
 
 
