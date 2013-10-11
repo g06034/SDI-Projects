@@ -30,7 +30,7 @@ if (myWife + mySandwich == true)
 //Functions        
         
         
-var makeSandwich = function(sandwichMaterials, , tupperwareDish, myLunchbox) {
+var makeSandwich = function(sandwichMaterials, tupperwareDish, myLunchbox) {
 	console.log(" I proceed to the kitchen to get " + sandwichMaterials + 
 				" ready to make sandwich then put in " +
 				 + tupperwareDish + "."
@@ -39,10 +39,10 @@ var makeSandwich = function(sandwichMaterials, , tupperwareDish, myLunchbox) {
 				" and my sandwich will be complete.");
 				
 if (sandwichMaterials > 0) {
-	console.log(" Time to make my sandwich")
-} else {
+		console.log(" Time to make my sandwich")
+		} else {
 	    console.log( "Oh well/, I will just buy some lunch at work") 
-};				
+		};				
 
 
 
