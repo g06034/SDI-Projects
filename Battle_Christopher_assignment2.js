@@ -33,7 +33,7 @@ if (myWife + mySandwich == true)
 var makeSandwich = function(sandwichMaterials, tupperwareDish, myLunchbox) {
 	console.log(" I proceed to the kitchen to get " + sandwichMaterials + 
 				" ready to make sandwich then put in " +
-				 + tupperwareDish + "."
+				  tupperwareDish + "."
 				"Then I can pack it up in" +
 				myLunchbox +
 				" and my sandwich will be complete.");
