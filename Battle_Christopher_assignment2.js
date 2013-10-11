@@ -13,6 +13,7 @@ var myWife = "Eva";
 var imReady = "That means one less step";
 var minUntilArrival = 90;
 var minBeforeShift = 120;
+var sandwichMaterials = [ "Sandwich Bread", "Butterknife", "Sandwich Meat", "Cheese Slice", "Mayonnaise" ];
 
 // My outputs
 console.log("My alarm on my iPhone goes off");
@@ -33,15 +34,16 @@ if (myWife + mySandwich == true)
 var makeSandwich = function(sandwichMaterials, tupperwareDish, myLunchbox) {
 	console.log(" I proceed to the kitchen to get " + sandwichMaterials + 
 				" ready to make sandwich then put in " +
-				  tupperwareDish + "."
-				"Then I can pack it up in" +
+				  tupperwareDish + ".")
+				("Then I can pack it up in" +
 				myLunchbox +
-				" and my sandwich will be complete.");
+				" and my sandwich will be complete.")
+				};
 				
 if (sandwichMaterials > 0) {
 		console.log(" Time to make my sandwich")
 		} else {
-	    console.log( "Oh well/, I will just buy some lunch at work") 
+	    console.log( "Oh well\, I will just buy some lunch at work") 
 		};				
 
 
