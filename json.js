@@ -4,7 +4,7 @@
  JSON  
  */
 
-var json2 = {
+var json = {
     "prospects": [
         {
             "name": "David",
