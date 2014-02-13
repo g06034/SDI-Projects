@@ -28,7 +28,7 @@ var minBeforeShift = 120;
  
  myPrompt = prompt("Hey stranger\, do you have a name?", "Enter your name here.");
  
- console.log("Your name is " + myPrompt);
+ console.log("Hello there " + myPrompt);
  
  myConfirmation = confirm(" Are you prepared to go on another journey in the life of Chris Battle?");
  
