@@ -19,7 +19,6 @@ var mySandwich = true;
 var onTime = true;
 var minUntilArrival = 90;
 var minBeforeShift = 120;
-var
 
 
  
@@ -29,7 +28,7 @@ var
  
  myPrompt = prompt("Hey stranger\, do you have a name?", "Enter your name here.");
  
- console.log("Hello there " + myPrompt);
+ console.log("Hello there\, " + myPrompt);
  
  myConfirmation = confirm(" Are you prepared to go on another journey in the life of Chris Battle?");
  
@@ -61,6 +60,7 @@ console.log("I sit up in bed\, my eyes open as I grogily awaken.");
 console.log("I angrily fumble to turn off my alarm.");
 console.log("My alarm has also woken my wife up." + " I wonder if she made me a sandwich last night?");
 console.log( myWife + " did you make my sandwich last night" + "?");
+console.log( myWife + " didn\'t make my sandwich last night" + ".");
 console.log("I first go to bathroom to brush my teeth and wash my face.");
 console.log("Then I get dressed for work.");
 
@@ -116,28 +116,30 @@ var onTime = function(minBeforeShift, minUntilArrival) {
 		
 }; 
 
-console.log("Since my commute is long\, I like to countdown the hours \.");
+console.log("Since my commute is long\, I like to countdown the hours\.");
 
 //while-loop
 
 
 while(hbs > 0) {
 		console.log(hbs + " hours until I arrive at work.");
-		bobotw--;
+		hbs--;
 		
 };	
 
 console.log("I have only minutes left until I get to work.");
 
-console.log("Well that was fun but I\'ve still got minutes left until I get to work. Let/'s count the minutes down");	
+console.log("Well that was fun but I\'ve still got minutes left until I get to work. Let\'s count the minutes down");	
 
 
-var bobotw = 0;
+var mlus = 59;
 // for-loop
 
-for (var bobotw = 0; bobotw < 99; bobotw++) {
-	console.log(bobotw + " bottles of beer on the wall.");	
+for (var mlus = 59; mlus > 1; mlus--) {
+	console.log(mlus + " minutes until my shift begins.");	
 };
+
+console.log("1 minute until my shift begins.");
 
 
 
