@@ -6,7 +6,7 @@
  
 alert("JavaScript works!")
  
-alert("We are now on our second journey together. This time we take a look into the daily schedule of Chris Battle on his way to work.");
+alert("This time we take a look into the daily schedule of Chris Battle on his way to work.");
 // My variables 
 //string variables 
 var myEssentials = [ "Government Contractor ID", " Wallet", " iPhone charger", " iPhone" ];
@@ -19,6 +19,7 @@ var mySandwich = true;
 var onTime = true;
 var minUntilArrival = 90;
 var minBeforeShift = 120;
+var
 
 
  
@@ -37,7 +38,7 @@ var minBeforeShift = 120;
 	 console.log("I never doubted you were up for the challenge. C\'mon the story is starting!");
 	 
 } else {
-	console.log("That's fine take your time. Go get a cold beverage if you\'d like. It\'s your world\, we\'re just living in it!");
+	console.log("That's fine take your time. Go get a cold drink if you\'d like. It\'s your world\, we\'re just living in it!");
 	
 	
 };
@@ -48,7 +49,7 @@ var minBeforeShift = 120;
 
 
 //While-loop variable, iterator
-var bobotw = 99;
+var hbs = 2;
 
 
 
@@ -65,7 +66,7 @@ console.log("Then I get dressed for work.");
 
 
 //Conditionals
-if (myWife + mySandwich == true)
+if (myWife + mySandwich === true)
         {
         imReady === true
         }
@@ -115,20 +116,20 @@ var onTime = function(minBeforeShift, minUntilArrival) {
 		
 }; 
 
-console.log("Since my commute is long\, I like to sing a song to help pass the time.");
+console.log("Since my commute is long\, I like to countdown the hours \.");
 
 //while-loop
 
 
-while(bobotw > 0) {
-		console.log(bobotw + " bottles of beer on the wall.");
+while(hbs > 0) {
+		console.log(hbs + " hours until I arrive at work.");
 		bobotw--;
 		
 };	
 
-console.log("No more bottles of beer.");
+console.log("I have only minutes left until I get to work.");
 
-console.log("Well that was fun but I\'ve still got more time\, let\'s reverse our song.");	
+console.log("Well that was fun but I\'ve still got minutes left until I get to work. Let/'s count the minutes down");	
 
 
 var bobotw = 0;
