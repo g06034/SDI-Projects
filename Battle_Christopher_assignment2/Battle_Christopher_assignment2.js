@@ -1,7 +1,7 @@
 /* 
  "The Weekday Morning Grind "
  Author: Christopher L. Battle
- SDI 1312 Project 2 
+ SDI 1402 Project 2 
  */
  
 alert("JavaScript works!")
@@ -146,6 +146,8 @@ console.log("1 minute until my shift begins.");
 console.log("I have made it to the parking lot outside of my building.");
 console.log("I have finally arrived at work\, and I am ready to help the customer!");
 console.log("THE END.");				 
+
+
 
 
 	
