@@ -11,7 +11,6 @@ Morning Intro - Deeper dive into waking up in the morning and getting ready for 
 //Global Variables(Internal Storage)
 
 
-
 var myAlarm = "iPhone";  /* String Variable */
 var smartWatch = "Pebble Smartwatch"; /* String Variable */
 var numOfAlarms = 4; /* Number Condition */
@@ -26,11 +25,17 @@ var minUntilWorkArrival = 60; /* Number Variable for math */
 var kCupInserted = true; /* Boolean Variable for Nested Conditional */
 var minPerSnooze = 5; /* Number Variable */
 var daughterAwake = false; /* Boolean Variable */
+var eatBreakfast = false; /* Boolean Variable */
+var essentialsCheck = [ "iPhone", "Wallet", "Car keys", ]
+for (var i = 5; i < 51; i+=5) {
+	console.log(i);
+}
 
 
 
 
- 
+
+
 
 
 
