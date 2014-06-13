@@ -5,13 +5,18 @@ Chris Battle
 SDI 1406
 Project 2
 June 11, 2014
-Morning Intro - Awaking in the morning and getting ready for work.
+Morning Intro - Deeper dive into waking up in the morning and getting ready for work.
 */
 
 //Global Variables(Internal Storage)
 
+
+
 var myAlarm = "iPhone";  /* String Variable */
-var numOfAlarms = 3; /* Number Variable */
+var smartWatch = "Pebble Smartwatch"; /* String Variable */
+var numOfAlarms = 4; /* Number Condition */
+var numOfPebbleAlarms = 3; /* Number Variable */
+var numOfIphoneAlarms = 1; /* Number Variable */
 var amTime = 7; /* Number Variable */
 var amWorkTime = 8; /* Number Variable */
 var wantTea = true; /* Boolean Variable */
@@ -20,6 +25,13 @@ var wantCoffee = false; /* Boolean Variable */
 var minUntilWorkArrival = 60; /* Number Variable for math */
 var kCupInserted = true; /* Boolean Variable for Nested Conditional */
 var minPerSnooze = 5; /* Number Variable */
+var daughterAwake = false; /* Boolean Variable */
+
+
+
+
+ 
+
 
 
 
