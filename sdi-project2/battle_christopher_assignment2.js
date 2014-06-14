@@ -8,6 +8,9 @@ June 11, 2014
 Morning Intro - Deeper dive into waking up in the morning and getting ready for work.
 */
 
+alert ("This is a little bit of insight on my daily morning wake-up routine.");
+
+
 //Global Variables(Internal Storage)
 
 
@@ -16,7 +19,7 @@ var smartWatch = "Pebble Smartwatch"; /* String Variable */
 var numOfAlarms = 4; /* Number Condition */
 var numOfPebbleAlarms = 3; /* Number Variable */
 var numOfIphoneAlarms = 1; /* Number Variable */
-var amTime = 7; /* Number Variable */
+var amTime = 6; /* Number Variable */
 var amWorkTime = 8; /* Number Variable */
 var wantTea = true; /* Boolean Variable */
 var getGas = true; /* Boolean Variable */
@@ -27,9 +30,6 @@ var minPerSnooze = 5; /* Number Variable */
 var daughterAwake = false; /* Boolean Variable */
 var eatBreakfast = false; /* Boolean Variable */
 var essentialsCheck = [ "iPhone", "Wallet", "Car keys", ]
-for (var i = 5; i < 51; i+=5) {
-	console.log(i);
-}
 
 
 
@@ -42,15 +42,32 @@ for (var i = 5; i < 51; i+=5) {
 
 
 
+//Initial Prompt
+var reply = prompt("Hello there, stranger!  What's your name?", "")
+alert ( "It\'s great to meet you " + reply + "!") //Grab user input then alert them back using that input.
 
 
 //Console Outputs
-console.log("My alarm goes off. I groggily open an eye and peek at " + myAlarm);
-console.log("It\'s 7:00 A.M.");
+console.log("My alarm goes off. I groggily open an eye and peek at my " + myAlarm);
+console.log("It\'s 6:00 A.M.");
 console.log("I need to be at work at " + amWorkTime + ".");
-console.log("Do I want to snooze or not?");
-console.log("I have " + numOfAlarms + " alarms.");
+console.log("Do I want to go back to sleep until at least 7:00 A.M. or not?");
+console.log("I have a total of " + numOfAlarms + " alarms.");
 console.log("Each alarm has a " + minPerSnooze + " minute snooze interval.");
+
+//For Loop
+for (var timeUntilWake = 60; timeUntilWake > 1; timeUntilWake-=5) {
+	console.log(timeUntilWake + " minutes until it\'s 7:00 A.M.");
+}
+
+console.log("It\'s 7:00 A.M. now.");
+
+
+
+
+
+
+
 
 
 
@@ -90,7 +107,18 @@ if (toSnooze === true) {
 
 
 
+
+
+
+
 // Conditionals
+if (daughterAwake === true) {
+	console.log(" Uh oh, Aaliyah is awake, I need to make her a bottle.");
+} else {
+	console.log(" Phew, Aaliyah is still sound asleep.");
+
+
+};
 
 var wantTea = true, kCupInserted = true;
 
@@ -112,7 +140,7 @@ if (wantTea === true) {
 if (minUntilWorkArrival < 25) {
 	console.log("I can get gas on my way to work .");
 	} else {
-		console.log("No time to get gas on the way to work. I \'ll have to grab it on my way home.");
+		console.log("No time to get gas on the way to work. I\'ll have to grab it on my way home.");
 
 
 	};
