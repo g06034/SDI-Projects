@@ -102,6 +102,61 @@ function recordGrades(array){
 
 
 }
+
+
+//WHILE LOOP
+		while(startEnteringGrades==true){
+
+		var g=prompt("Grade #"+i);
+		if(g==null){
+			alert("Calculating your final GPA. Be patient young grasshopper.");  // FINISH
+			break;
+		}
+
+		if(g < 0){
+			alert("Thanks we are going to calculate your GPA.");
+			console.log("Thanks, we are going to calculate your GPA.");
+			break;
+		}
+		g=parseFloat(g);
+		if(g!="" && !isNaN(g) ){
+		array[i-1]=g;
+		i++;
+		}
+
+		}
+
+		// END OF WHILE LOOP
+
+		return array;
+
+
+}
+
+
+//FUNCTION THAT TAKES A NUMBER AND RETURNS A NUMBER
+
+function calculateAverage(average){
+	//Use of array property(length),for loop and a math function
+	for(var i=0; i<grades.length; i++){
+		average+=grades[i];
+	}
+	average/=grades.length;
+	average=Math.floor(average); //Math function
+	json.average=average;
+	return average;
+}
+
+//FUNCTION THAT TAKES A BOOLEAN AND RETURNS A BOOLEAN
+function success(succeeded){
+	if(average >=74){
+		succeeded=true;
+	}else{
+	succeeded=false;
+	}
+
+	return succeeded;
+}
 	
 	
 	
