@@ -16,3 +16,6 @@ var average=0;
 var succeeded=false;
 var decision="";
 
+
+console.log("For this story we will be entering your grades to caculate your GPA.");
+console.log("To begin entering your grades simply press the start button above.");
