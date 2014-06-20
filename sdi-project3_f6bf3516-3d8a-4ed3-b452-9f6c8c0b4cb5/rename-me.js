@@ -64,7 +64,7 @@ function start(){
 
 
 	}
-}
+};
 
 
 //PROGRAM END
@@ -81,7 +81,7 @@ function recordGrades(array){
 		if(g==null){
 			alert("Calculating your final GPA. Be patient young grasshopper.");  // FINISH
 			break;
-		}
+		};
 
 		if(g < 0){
 			alert("Thanks we are going to calculate your GPA.");
@@ -101,7 +101,7 @@ function recordGrades(array){
 		return array;
 
 
-}
+};
 
 
 //WHILE LOOP
@@ -111,7 +111,7 @@ function recordGrades(array){
 		if(g==null){
 			alert("Calculating your final GPA. Be patient young grasshopper.");  // FINISH
 			break;
-		}
+		};
 
 		if(g < 0){
 			alert("Thanks we are going to calculate your GPA.");
@@ -131,7 +131,7 @@ function recordGrades(array){
 		return array;
 
 
-}
+};
 
 
 //FUNCTION THAT TAKES A NUMBER AND RETURNS A NUMBER
@@ -145,7 +145,7 @@ function calculateAverage(average){
 	average=Math.floor(average); //Math function
 	json.average=average;
 	return average;
-}
+};
 
 //FUNCTION THAT TAKES A BOOLEAN AND RETURNS A BOOLEAN
 function success(succeeded){
@@ -156,7 +156,21 @@ function success(succeeded){
 	}
 
 	return succeeded;
-}
+};
+
+//FUNCTION THAT TAKES A STRING AND RETURNS A STRING
+function appreciation(decision){
+	if(succeeded==true){
+		decision="Congratulation "+name+", you have succeeded.";
+		json.decision="succeeded";
+	}else{
+		decision="Sorry "+name+", you have to work harder to succeed next year";
+		json.decision="fail.";
+	}
+
+	return decision;
+};
+
 	
 	
 	
