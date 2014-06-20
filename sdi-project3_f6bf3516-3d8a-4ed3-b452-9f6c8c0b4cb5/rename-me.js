@@ -68,3 +68,40 @@ function start(){
 
 
 //PROGRAM END
+
+
+//FUNCTION THAT RETURNS AN ARRAY
+function recordGrades(array){
+	var i=1; //Local variable
+	
+	//WHILE LOOP
+		while(startEnteringGrades==true){
+
+		var g=prompt("Grade #"+i);
+		if(g==null){
+			alert("Calculating your final GPA. Be patient young grasshopper.");  // FINISH
+			break;
+		}
+
+		if(g < 0){
+			alert("Thanks we are going to calculate your GPA.");
+			console.log("Thanks, we are going to calculate your GPA.");
+			break;
+		}
+		g=parseFloat(g);
+		if(g!="" && !isNaN(g) ){
+		array[i-1]=g;
+		i++;
+		}
+
+		}
+
+		// END OF WHILE LOOP
+
+		return array;
+
+
+}
+	
+	
+	
