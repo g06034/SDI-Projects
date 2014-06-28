@@ -150,3 +150,61 @@ function validateEmail(email){
 };
 
 
+/*---------------------------------------------------------------*/
+//Function title: validateURL()
+//@parameter: string
+//@return: bool
+//Description
+//function takes in a string and performs validation to see if url start is valid
+function validateURL(url)
+{
+	var regURL = url.indexOf("http://");//get the index of regular url
+	var secureURL = url.indexOf("https://"); // get the index of secured url
+	
+	//first check for appearance of either http or https
+		if((regURL!=-1) ||(secureURL!=-1)) //if index of both regular and secure is not found go to else otherwise step inside
+		{
+			//make sure it appears at the beginning of the string
+			if(regURL!=-1)//if regular url found check to see if it appears at the beginning of the string
+				return (regURL!=0) ? false : true;//if not return false otherwise true
+			
+			if(secureURL!=-1)//if secure url found check to see if it appears at the beginning of the string
+				return (secureURL!=0) ? false : true;//if not return false otherwise true		
+		}
+		else
+		{
+			//both are absent so url incorrect return false
+			return false;
+		}
+	
+};
+
+/*---------------------------------------------------------------*/
+//Function title: searchMinGreaterValue
+//@parameters:array, number
+//@return: number
+//Description
+//function takes in an array and a number and then find the smallest number in 
+//the array which is greater than a passed in number
+function searchMinGreaterValue(arr, e){
+	arr.sort(function (a, b) {
+    		 return a - b;});//sort the array in ascending numeric order
+	//since the array is sorted now we can perform linear search
+	var minElement = 0;
+	for (i=0; i<arr.length-1; i++)
+	{
+		if(arr[i]>e)
+		{
+			minElement = arr[i];
+			return minElement;//as soon as the first value found return and exit the loop
+		}	
+			
+	}
+	
+};
+
+
+
+
+
+
