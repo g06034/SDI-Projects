@@ -67,7 +67,16 @@
   console.log("Good thing I have my " + backupAlarm + "\, and my " + backupAlarm2 + ".");
   console.log("I look at glance at my wrist to check the time.");
   console.log("It\'s " + wakeTime + " A.M.");
-  console.log("I head downstairs to brush my teeth\, and wash my face.");
+
+  // First function of brushing teeth
+  var brushTeeth = function () {
+      console.log("I head downstairs and brush my teeth.");
+  };
+
+
+  brushTeeth();
+
+
   console.log("Then put my work clothes on.");
 
 
