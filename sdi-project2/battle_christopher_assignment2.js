@@ -18,30 +18,42 @@
   var storyName = "Chris\'s World 2\.0"; /* Variable with escapes */
   var iphoneCharging = true; /* Boolean Variable */
 
-
-
-
-  var mentalConfirm = confirm("Are you mentally prepared to take a peek into " + storyName + "?"); /* Required confirm */
-
-  if (mentalConfirm === true) { /* Boolean conditional */
-      console.log("I knew you were up for it! I never doubted it.");
-
-  } else {
-      console.log("Wax on and wax off until you are ready.");
-  }
-
   // First required prompt for user input
+
 
   var yourName;
 
 
   yourName = prompt("Who are you?");
 
+  // Inital console log
+  console.log("Hey there " + yourName + "\, nice to meet you.");
+
+
+  var mentalConfirm = confirm( yourName + "\, are you mentally prepared to take a peek into " + storyName + "?"); /* Required confirm */
+
+  if (mentalConfirm === true) { /* Boolean conditional */
+      console.log("I was hoping you were. You\'re in for a treat!");
+
+  } else {
+      console.log("Wax on and wax off until you are ready.");
+  }
+
+  // Initial story start console log
+  console.log("Our story starts at 6:00 A.M.")
+
+
+  //For Loop
+  for (var timeUntilWake = 60; timeUntilWake > 9; timeUntilWake-=10) {
+	     console.log(timeUntilWake + " minutes until it\'s 7:00 A.M.");
+  }
+
+  console.log("It\'s 7:00 A.M. now.");
+
 
   // Console log inputs
 
 
-  console.log("Hey there " + yourName + "\, nice to meet you.");
   console.log("I wake up to my wrist vibrating.");
   console.log("I look across the room to see if my " + mainAlarm + " is on the charger.");
   if (iphoneCharging === true) { /* Boolean conditional */
