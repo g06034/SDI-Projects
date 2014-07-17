@@ -5,7 +5,7 @@
   July 17, 2014
   Project 2
   An expansion of my daily morning routine
-  Daily Routine 2.0
+  Chris's World 2.0
   */
 
   //Global Variables(Internal Storage)
@@ -15,14 +15,12 @@
   var backupAlarm = "FitBit Flex"; /* String Variable */
   var backupAlarm2 = "Pebble Smartwatch"; /* String Variable */
   var workTime = 8; /* Number Variable */
-  var storyName = "Chris\'s World"; /* Variable with escapes */
+  var storyName = "Chris\'s World 2\.0"; /* Variable with escapes */
   var iphoneCharging = true; /* Boolean Variable */
 
 
 
-  alert("I set three different alarms to ensure I wake up in the morning.");
-  alert("I'm a heavy sleeper\,so sounds are pretty much useless.");
-  alert("I also don't want to wake my wife up while she sleeps\, so I set two silent alarms.");
+
   var mentalConfirm = confirm("Are you mentally prepared to take a peek into " + storyName + "?"); /* Required confirm */
 
   if (mentalConfirm === true) { /* Boolean conditional */
