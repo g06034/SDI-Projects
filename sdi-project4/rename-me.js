@@ -201,7 +201,7 @@ function searchMinGreaterValue(arr, e){
 			
 	}
 	
-};
+};w
 
 
 
