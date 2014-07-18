@@ -8,7 +8,9 @@
   Chris's World 2.0
   */
 
+
   //Global Variables(Internal Storage)
+
 
   var wakeTime = 7; /* Number Variable */
   var mainAlarm = "iPhone"; /* String Variable */
@@ -18,6 +20,7 @@
   var storyName = "Chris\'s World 2\.0"; /* Variable with escapes */
   var iphoneCharging = true; /* Boolean Variable */
 
+
   // First required prompt for user input
 
 
@@ -26,28 +29,47 @@
 
   yourName = prompt("Who are you?");
 
+
   // Inital console log
+
+
   console.log("Hey there " + yourName + "\, nice to meet you.");
 
 
   var mentalConfirm = confirm( yourName + "\, are you mentally prepared to take a peek into " + storyName + "?"); /* Required confirm */
 
+
   if (mentalConfirm === true) { /* Boolean conditional */
-      console.log("I was hoping you were. You\'re in for a treat!");
+      console.log("I was hoping you were ready. You\'re in for a treat!");
 
   } else {
       console.log("Wax on and wax off until you are ready.");
   }
 
+
   // Initial story start console log
+
+
   console.log("Our story starts at 6:00 A.M.")
 
 
-  //For Loop
+  //For Loop that counts time by ten minute intervals then alerts user when it's 7AM
+
+
   for (var timeUntilWake = 60; timeUntilWake > 9; timeUntilWake-=10) {
 	     console.log(timeUntilWake + " minutes until it\'s 7:00 A.M.");
   }
 
+  //While loop that counts down the final ten minutes
+
+
+  var i = 10;
+  while (i > 1) {
+      console.log( i + " minutes until it\'s 7:00 A.M.");
+      i--;
+  };
+
+  console.log("1 minute until it\'s 7:00 A.M. ");
   console.log("It\'s 7:00 A.M. now.");
 
 
@@ -68,16 +90,49 @@
   console.log("I look at glance at my wrist to check the time.");
   console.log("It\'s " + wakeTime + " A.M.");
 
-  // First function of brushing teeth
+
+  // First function(procedure) of brushing teeth
+
+
   var brushTeeth = function () {
       console.log("I head downstairs and brush my teeth.");
   };
 
 
-  brushTeeth();
+  // Function(procedure) of washing face
+
+
+  var washFace = function () {
+      console.log("I grab a wash cloth and wash my face.");
+  };
+
+
+  washFace();
 
 
   console.log("Then put my work clothes on.");
+  console.log("I need to check and see if I need to get some gas.");
+
+
+
+  // Function with return value
+
+
+  var getGas = function(milesToWork) {
+      var milesToEmpty = 20;
+
+
+
+      if (milesToWork > milesToEmpty) {
+          console.log("Darn\, I have to get gas!");
+          return console.log(" I won\'t be able to get to work if I don\'t.");
+      }
+      else {
+          console.log(" I don\'t need gas.");
+        return console.log("I filled up my tank recently.");
+
+      }
+};
 
 
   // Second prompt for user input
@@ -86,11 +141,13 @@
   var timeNow;
   timeNow = prompt("How many minutes is it after 7?", "Any number value from 1 to 30.");
 
+
   if (timeNow <= 30) {
       console.log("I will be on time for work today.");
 
     } else {
-        console.log("I am going to be late!");
+        console.log("I am going to be late for work!");
     }
 
-    console.log(" THE END.");
+
+    console.log("THE END.");
