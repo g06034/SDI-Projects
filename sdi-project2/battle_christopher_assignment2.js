@@ -1,5 +1,6 @@
 //alert("JavaScript works!");
 
+
   /*
   Christopher Battle
   July 17, 2014
@@ -53,7 +54,7 @@
   console.log("Our story starts at 6:00 A.M.")
 
 
-  //For Loop that counts time by ten minute intervals then alerts user when it's 7AM
+  //For Loop that counts time by ten minute intervals
 
 
   for (var timeUntilWake = 60; timeUntilWake > 9; timeUntilWake-=10) {
@@ -69,13 +70,12 @@
       i--;
   };
 
-  console.log("1 minute until it\'s 7:00 A.M. ");
-  console.log("It\'s 7:00 A.M. now.");
-
 
   // Console log inputs
 
 
+  console.log("1 minute until it\'s 7:00 A.M. ");
+  console.log("It\'s 7:00 A.M. now.");
   console.log("I wake up to my wrist vibrating.");
   console.log("I look across the room to see if my " + mainAlarm + " is on the charger.");
   if (iphoneCharging === true) { /* Boolean conditional */
@@ -89,6 +89,19 @@
   console.log("Good thing I have my " + backupAlarm + "\, and my " + backupAlarm2 + ".");
   console.log("I look at glance at my wrist to check the time.");
   console.log("It\'s " + wakeTime + " A.M.");
+  console.log("When I wake up I like to jumpstart my brain with an equation of the day.");
+
+
+  // Boolean expression that uses two logical operators
+
+
+  var x = true
+  var y = false
+  var z = false
+
+  console.log("My equation for today is " + ((x && y) || z));
+  console.log("Ah\, good to get the brain flowing early.");
+
 
 
   // First function(procedure) of brushing teeth
