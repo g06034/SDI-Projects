@@ -3,10 +3,10 @@
 
   /*
   Christopher Battle
-  July 17, 2014
-  Project 2
+  July 24, 2014
+  Project 3
   An expansion of my daily morning routine
-  Chris's World 2.0
+  Chris's World 3.0
   */
 
 
@@ -18,7 +18,7 @@
   var backupAlarm = "FitBit Flex"; /* String Variable */
   var backupAlarm2 = "Pebble Smartwatch"; /* String Variable */
   var workTime = 8; /* Number Variable */
-  var storyName = "Chris\'s World 2\.0"; /* Variable with escapes */
+  var storyName = "Chris\'s World 3\.0"; /* Variable with escapes */
   var iphoneCharging = true; /* Boolean Variable */
 
 
