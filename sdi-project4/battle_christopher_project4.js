@@ -154,3 +154,35 @@ function validateEmail(email){
       return true;
     }
 }
+
+
+/*---------------------------------------------------------------*/
+//Function title: validateURL()
+//@parameter: string
+//@return: bool
+//Description
+//function takes in a string and performs validation to see if url start is valid
+
+
+function validateURL(url)
+{
+  var regURL = url.indexOf("http://");//get the index of regular url
+  var secureURL = url.indexOf("https://"); // get the index of secured url
+
+  //first check for appearance of either http or https
+    if((regURL!=-1) ||(secureURL!=-1)) //if index of both regular and secure is not found go to else otherwise step inside
+    {
+      //make sure it appears at the beginning of the string
+      if(regURL!=-1)//if regular url found check to see if it appears at the beginning of the string
+        return (regURL!=0) ? false : true;//if not return false otherwise true
+
+      if(secureURL!=-1)//if secure url found check to see if it appears at the beginning of the string
+        return (secureURL!=0) ? false : true;//if not return false otherwise true
+    }
+    else
+    {
+      //both are absent so url incorrect return false
+      return false;
+    }
+
+}
