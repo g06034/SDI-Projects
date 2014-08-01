@@ -172,9 +172,11 @@
 
 
   // parseInt to make the string prompt value into number value
+
+
   var timeResult = parseInt(timeNow);
 
-  
+
   console.log("It\'s " + timeResult + " minutes after 7.");
 
 
