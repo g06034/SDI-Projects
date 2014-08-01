@@ -125,3 +125,32 @@ var d2_MilliSecs = d2.getTime(); // get the second date in milliseconds
   }
   return difference.toString(); //return the difference converted to a String
 }
+
+
+/*---------------------------------------------------------------*/
+//Function title: validateEmail()
+//@parameter: string
+//@return: bool
+//Description
+//function takes in a string and performs validation to see if email is valid
+//and then returns true or false based on the validity
+/*Basic Rules for validating email
+ The email address must have @ character
+The email address must have .(dot) character
+There must be at lease 2 characters between @ and .(dot)
+ * */
+//function can be expanded to check for known extension names .com .net .bex or at least for 3 or max 4 chars length
+// also could check that it can't start with the number or a symbol.
+
+
+function validateEmail(email){
+    var atSymb=email.indexOf('@'); //get the index of @ symbol
+    var dot=email.lastIndexOf('.'); // get the index of last occurence of .symbol
+
+    if(atSymb==-1 || dot==-1 || (atSymb+2)>=dot){ //if any of symbols aren't present or distance is less than 2 chars email is invalid
+      return false;
+    }
+    else{
+      return true;
+    }
+}
