@@ -186,3 +186,30 @@ function validateURL(url)
     }
 
 }
+
+
+/*---------------------------------------------------------------*/
+//Function title: searchMinGreaterValue
+//@parameters:array, number
+//@return: number
+//Description
+//function takes in an array and a number and then find the smallest number in
+//the array which is greater than a passed in number
+
+
+function searchMinGreaterValue(arr, e){
+  arr.sort(function (a, b) {
+         return a - b;});//sort the array in ascending numeric order
+  //since the array is sorted now we can perform linear search
+  var minElement = 0;
+  for (i=0; i<arr.length-1; i++)
+  {
+    if(arr[i]>e)
+    {
+      minElement = arr[i];
+      return minElement;//as soon as the first value found return and exit the loop
+    }
+
+  }
+
+}
