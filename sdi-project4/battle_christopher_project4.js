@@ -82,3 +82,46 @@ function titleCase(titleString)
 //Takes two dates and a string that says what is the unit of measure for the difference
 //either hours or days
 //returns the difference in the specified choice
+
+
+function dateDiffCalculation(d1, d2, units)
+{
+  var difference = 0; //variable to store our difference
+  var differenceinMS = 0; //variable to store difference in milliseconds
+  var one_day=1000*60*60*24; //conversion formula to convert from milliseconds to one day
+  var one_hour = 1000*60*60;//conversion formula to convert from milliseconds to one hour
+
+var d1_MilliSecs = d1.getTime(); // get the first date in milliseconds
+var d2_MilliSecs = d2.getTime(); // get the second date in milliseconds
+
+//switch on units to perform our calculation, could be expanded to calculate in seconds or minutes or weeks or months
+  switch(units){
+    case "days":
+        if(d1>d2){//if date 1 is greater than date 2
+          differenceinMS = d1_MilliSecs - d2_MilliSecs;//subtraction in milliseconds
+          difference = Math.round(differenceinMS/one_day); //conversion back to days
+        }
+        else if (d2>d1){//if date 2 is greater than date 1
+          differenceinMS = d2_MilliSecs - d1_MilliSecs;//subtraction in milliseconds
+          difference = Math.round(differenceinMS/one_day); //conversion back to days
+        }else
+          difference = 0;	//if both dates are the same there is no difference between them
+        break;
+    case "hours":
+
+        if(d1>d2){
+          differenceinMS = d1_MilliSecs - d2_MilliSecs;
+          difference = Math.round(differenceinMS/one_hour); //conversion back to hours
+        }
+        else if (d2>d1){
+          differenceinMS = d2_MilliSecs - d1_MilliSecs;
+          difference = Math.round(differenceinMS/one_hour); //conversion back to hours
+        }else
+          difference = 0;
+    break;
+    default:
+      alert("You have entered incorrect unit type");//some other string passed in that isn't days or hours
+    break;
+  }
+  return difference.toString(); //return the difference converted to a String
+}
