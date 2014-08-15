@@ -11,3 +11,12 @@
 
 
   //Global Variables(Internal Storage)
+
+
+  var wakeTime = 7; /* Number Variable */
+  var mainAlarm = "iPhone"; /* String Variable */
+  var backupAlarm = "FitBit Flex"; /* String Variable */
+  var backupAlarm2 = "Pebble Smartwatch"; /* String Variable */
+  var workTime = 8; /* Number Variable */
+  var storyName = "Chris\'s World 2\.0"; /* Variable with escapes */
+  var iphoneCharging = true; /* Boolean Variable */
