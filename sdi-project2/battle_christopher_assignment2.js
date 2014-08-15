@@ -49,3 +49,23 @@ if (mentalConfirm === true) { /* Boolean Conditional */
 
 
   // Console Log Inputs
+
+
+  console.log("Hey there " + yourName + "\,  It\'s a pleasure meeting you.");
+  console.log("I start off by waking up to my wrist vibrating.");
+  console.log("I look across the room to see if my " + mainAlarm + " is on the charger.");
+  if (iphoneCharging === true) { /* Boolean conditional */
+      console.log("My iPhone alarm never wakes me up when I need it to!");
+
+    } else {
+        console.log("That\'s why my iPhone alarm didn't wake me. My phone never charged while I slept.");
+    }
+
+
+  console.log("Good thing I have my " + backupAlarm + "\, and my " + backupAlarm2 + ".");
+  console.log("I glance at my wrist to check the time.");
+  console.log("It\'s " + wakeTime + " A.M.");
+  console.log("It\'s way too early to be up\, but my career won\'t allow me to wake up any later.");
+  console.log("I head downstairs to brush my teeth\, and wash my face.");
+  console.log("Then put my work clothes on.");
+  console.log("I quickly throw a K-cup in the Kuerig\, and head out the door with a fresh cup of coffee.");
