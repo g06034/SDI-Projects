@@ -134,6 +134,27 @@ if (mentalConfirm === true) { /* Boolean Conditional */
   console.log("I head downstairs to brush my teeth\, and wash my face.");
   console.log("Then put my work clothes on.");
   console.log("I quickly throw a K-cup in the Kuerig\, and head out the door with a fresh cup of coffee.");
+  console.log("I need to check and see if I need to get some gas.");
+
+
+  // Function with return value
+
+
+  var getGas = function(milesToWork) {
+      var milesToEmpty = 20;
+
+
+
+      if (milesToWork > milesToEmpty) {
+          console.log("Darn\, I need to get gas!");
+          return console.log(" I won\'t be able to get to work if I don\'t.");
+      }
+      else {
+          console.log(" I don\'t need gas.");
+        return console.log("I filled up my tank recently.");
+
+      }
+};
 
 
   // Second Prompt for User Input
