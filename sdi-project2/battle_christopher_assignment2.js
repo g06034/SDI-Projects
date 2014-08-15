@@ -20,3 +20,12 @@
   var workTime = 8; /* Number Variable */
   var storyName = "Chris\'s World 2\.0"; /* Variable with escapes */
   var iphoneCharging = true; /* Boolean Variable */
+
+
+// Console Outputs
+
+
+  console.log("I set 3 different alarms to ensure I wake up in the morning.");
+  console.log("I'm a heavy sleeper\,so sounds are pretty much useless for waking me.");
+  console.log("I don't want to wake my wife up while she sleeps\, so I set 2 silent alarms.");
+  var mentalConfirm = confirm("Are you mentally prepared to take a peek into " + storyName + "?"); /* Required Confirm */
