@@ -1,4 +1,4 @@
-//alert("JavaScript works!");
+  // alert("JavaScript works!");
 
 
   /*
@@ -10,7 +10,7 @@
   */
 
 
-  //Global Variables(Internal Storage)
+  // Global Variables(Internal Storage)
 
 
   var wakeTime = 7; /* Number Variable */
@@ -55,14 +55,14 @@ if (mentalConfirm === true) { /* Boolean Conditional */
   console.log("Our story starts at 6:00 A.M.")
 
 
-  //For Loop that counts time by ten minute intervals
+  // For Loop that counts time by ten minute intervals
 
 
   for (var timeUntilWake = 60; timeUntilWake > 9; timeUntilWake-=10) {
        console.log(timeUntilWake + " minutes until it\'s 7:00 A.M.");
   }
 
-  //While loop that counts down the final ten minutes
+  // While loop that counts down the final ten minutes
 
 
   var i = 10;
@@ -88,10 +88,49 @@ if (mentalConfirm === true) { /* Boolean Conditional */
     }
 
 
+  // Console Inputs
+
+
   console.log("Good thing I have my " + backupAlarm + "\, and my " + backupAlarm2 + ".");
   console.log("I glance at my wrist to check the time.");
   console.log("It\'s " + wakeTime + " A.M.");
   console.log("It\'s way too early to be up\, but my career won\'t allow me to wake up any later.");
+  console.log("When I wake up I like to jumpstart my brain with an equation of the day.");
+
+
+  // Boolean expression that uses two logical operators
+
+
+  var x = true
+  var y = false
+  var z = false
+
+  console.log("My equation for today is " + ((x && y) || z));
+  console.log("Ah\, good to get the brain flowing early.");
+
+
+  // First function(procedure) of brushing teeth
+
+
+  var brushTeeth = function () {
+      console.log("I head downstairs and brush my teeth.");
+  };
+
+
+  // Function(procedure) of washing face
+
+
+  var washFace = function () {
+      console.log("I grab a wash cloth and wash my face.");
+  };
+
+
+  washFace();
+
+
+  // Console Inputs
+
+
   console.log("I head downstairs to brush my teeth\, and wash my face.");
   console.log("Then put my work clothes on.");
   console.log("I quickly throw a K-cup in the Kuerig\, and head out the door with a fresh cup of coffee.");
