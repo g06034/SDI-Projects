@@ -22,7 +22,7 @@
   var iphoneCharging = true; /* Boolean Variable */
 
 
-// Console Outputs
+  // Console Outputs
 
 
   console.log("I set 3 different alarms to ensure I wake up in the morning.");
@@ -31,12 +31,12 @@
   var mentalConfirm = confirm("Are you mentally prepared to take a peek into " + storyName + "?"); /* Required Confirm */
 
 
-if (mentalConfirm === true) { /* Boolean Conditional */
+  if (mentalConfirm === true) { /* Boolean Conditional */
       console.log("I knew you were up for it! I never doubted you.");
 
-  } else {
+    } else {
       console.log("Your not ready. Try again another time.");
-  }
+    }
 
 
   // First required Prompt for User Input
