@@ -52,8 +52,34 @@ if (mentalConfirm === true) { /* Boolean Conditional */
 
 
   console.log("Hey there " + yourName + "\,  It\'s a pleasure meeting you.");
-  console.log("I start off by waking up to my wrist vibrating.");
+  console.log("Our story starts at 6:00 A.M.")
+
+
+  //For Loop that counts time by ten minute intervals
+
+
+  for (var timeUntilWake = 60; timeUntilWake > 9; timeUntilWake-=10) {
+       console.log(timeUntilWake + " minutes until it\'s 7:00 A.M.");
+  }
+
+  //While loop that counts down the final ten minutes
+
+
+  var i = 10;
+  while (i > 1) {
+      console.log( i + " minutes until it\'s 7:00 A.M.");
+      i--;
+  };
+
+  // Console Log Inputs
+
+
+  console.log("1 minute until it\'s 7:00 A.M. ");
+  console.log("It\'s 7:00 A.M. now.");
+  console.log("I wake up to my wrist vibrating.");
   console.log("I look across the room to see if my " + mainAlarm + " is on the charger.");
+
+
   if (iphoneCharging === true) { /* Boolean conditional */
       console.log("My iPhone alarm never wakes me up when I need it to!");
 
@@ -69,3 +95,19 @@ if (mentalConfirm === true) { /* Boolean Conditional */
   console.log("I head downstairs to brush my teeth\, and wash my face.");
   console.log("Then put my work clothes on.");
   console.log("I quickly throw a K-cup in the Kuerig\, and head out the door with a fresh cup of coffee.");
+
+
+  // Second Prompt for User Input
+
+
+  var timeNow;
+  timeNow = prompt("How many minutes is it after 7?", "Any number value from 1 to 30.");
+
+  if (timeNow <= 30) {
+      console.log("I will be on time for work today.");
+
+    } else {
+        console.log("I am going to be late!");
+    }
+
+    console.log("THE END.");
