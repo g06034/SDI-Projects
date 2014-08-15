@@ -29,3 +29,20 @@
   console.log("I'm a heavy sleeper\,so sounds are pretty much useless for waking me.");
   console.log("I don't want to wake my wife up while she sleeps\, so I set 2 silent alarms.");
   var mentalConfirm = confirm("Are you mentally prepared to take a peek into " + storyName + "?"); /* Required Confirm */
+
+
+if (mentalConfirm === true) { /* Boolean conditional */
+      console.log("I knew you were up for it! I never doubted you.");
+
+  } else {
+      console.log("Your not ready. Try again another time.");
+  }
+
+
+  // First required Prompt for User Input
+
+
+  var yourName;
+
+
+  yourName = prompt("And you are?");
