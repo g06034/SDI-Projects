@@ -31,7 +31,7 @@
   var mentalConfirm = confirm("Are you mentally prepared to take a peek into " + storyName + "?"); /* Required Confirm */
 
 
-if (mentalConfirm === true) { /* Boolean conditional */
+if (mentalConfirm === true) { /* Boolean Conditional */
       console.log("I knew you were up for it! I never doubted you.");
 
   } else {
@@ -46,3 +46,6 @@ if (mentalConfirm === true) { /* Boolean conditional */
 
 
   yourName = prompt("And you are?");
+
+
+  // Console Log Inputs
