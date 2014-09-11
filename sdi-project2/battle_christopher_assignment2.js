@@ -1,4 +1,4 @@
- alert("JavaScript works!");
+ //alert("JavaScript works!");
 
  /* Christopher Battle
     September 11, 2014
