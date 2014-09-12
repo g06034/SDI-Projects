@@ -14,18 +14,35 @@
   var meleeDamagePoints = 2.5; /* Number Variable */
   var magicDamagePoints = 5; /* Number Variable for Math */
   var greeting = "Today we\'ll learn about a game."; /* String with escapes Variable */
-  var enemy = "Dragon"; /* String Variable */
+  var enemy1 = "Red Dragon"; /* String Variable */
+  var enemy2 = "Blue Dragon"; /* String Variable */
   var magicChosen = true; /* Boolean Variable */
-  var enemyHealthPoints = 8; /* Number Variable for Math */
+  var enemy1HealthPoints = 8; /* Number Variable for Math */
+  var enemy2HealthPoints = 12; /* Number Variable */
   var age = 24; /* Number Variable */
   var minAge = 18; /* Number Variable */
   var maxAge = 100; /* Number Variable */
+  var namePrompt; /* Input Prompt Variable */
+  var warlockChosen = true; /* Boolean Conditional Variable */
+  var attackPrompt; /* Input Prompt Variable */
+  var sword = 25; /* Number Variable */
+  var shield = 50; /* Number Variable */
+  var yourDefense = 10; /* Number Variable */
+  var redDragonStrike = 10; /* Number Variable */
+  var blueDragonStrike = 15; /* Number Variable */
+  var fullArmor = sword + shield; /* Number Variable */
+
+
+
+
+
+
 
 
   // Prompt for input
 
 
-  var namePrompt;
+
 
   namePrompt = prompt("Who are you?","Type your name");
   console.log("Hello there\, " + namePrompt + ".");
@@ -47,10 +64,6 @@
   // Number Conditionals nested
 
 
-  var age = 24;
-  var minAge = 18;
-  var maxAge = 100;
-
   if (age >= minAge) {
        if (age <= maxAge) {
           console.log("Your old enough to play\, but not too old.");
@@ -69,9 +82,6 @@
   //Boolean Conditional
 
 
-  var warlockChosen = true;
-
-
   warlockChosen = confirm("Are you choosing the Warlock class?");
 
   if (warlockChosen === true) {
@@ -82,14 +92,11 @@
   };
 
 
-
-  console.log("You must slay your first enemy" + " which is the " + enemy + ".");
+  console.log("You must slay your first enemy" + " which is the " + enemy1 + ".");
 
 
   // Prompt for input
 
-
-  var attackPrompt;
 
   attackPrompt = prompt("Who attack will you choose?","Type \"melee\"\, or \"magic\".");
   console.log("You attack with " + attackPrompt + "!");
@@ -112,7 +119,6 @@
    // Math
 
 
-
   if (attackPrompt === "magic") {
       console.log(magicDamagePoints * 2  + attackPrompt + " damage was done\, because of your multiplier!");
   } else {
@@ -125,10 +131,60 @@
 
 
   if (attackPrompt === "magic")  {
-      console.log("You have slayed the " + enemy + "!");
+      console.log("You have slayed the " + enemy1 + "!");
   } else {
-       console.log("You have not slayed the " + enemy + " and it is pissed!");
+       console.log("You have not slayed the " + enemy1 + " and it is pissed!");
   };
 
 
-   console.log("THE END");
+// Functions
+
+
+  var getWeapon = function () {
+      console.log("You look around for awhile eventually finding a shiny sword.");
+
+  };
+
+
+  // Console Outputs
+
+
+  console.log("Welcome back friend!");
+
+
+  confirm("Did you miss me?");  // Confirm
+
+
+  console.log("We are going to be getting into today is a little more intense.");
+  console.log("There are two new dragons that heard about what you did to their brother.");
+  console.log("First off\, let\'s grab a weapon. You\'re going to need it.");
+
+
+  getWeapon(); // Function called
+
+
+  console.log("Now you are a little more prepared to face these dragons.");
+  console.log("Now that I think about it\, a shield might help you out as well.");
+  console.log("Well what are you waiting for? Find a shield, or it\s your funeral!");
+  console.log("With your sword and shield your health points are now " + fullArmor + ".");
+  console.log("You are now ready for battle.");
+  console.log("You head off to the tower where the dragon lay.");
+  console.log("The dragon awakens as you approach the tower.");
+  console.log("The " + enemy1 + " is ready to devour you.");
+  console.log("The batle begins. You waste no time and strike first.");
+
+
+  // While Loop
+
+
+  var rdhr = 8; // iterator/counter
+  while (rdhr > 0) {
+    console.log(rdhr + " health points remaining for " + enemy1 + ".");
+    rdhr--;
+
+  };
+
+
+  console.log("0 health points remaining for " + enemy1 + ".");
+  console.log("You let out a victory cry.");
+  console.log("That was the next dragons\' little brother. Don\'t get cocky.");
