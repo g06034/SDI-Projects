@@ -179,12 +179,27 @@
 
   var rdhr = 8; // iterator/counter
   while (rdhr > 0) {
-    console.log(rdhr + " health points remaining for " + enemy1 + ".");
-    rdhr--;
+        console.log(rdhr + " health points remaining for " + enemy1 + ".");
+        rdhr--;
 
   };
 
 
   console.log("0 health points remaining for " + enemy1 + ".");
+
+  // For Loop
+
+
+  for (var yhr = 75; yhr < 101; yhr++) {
+      console.log(yhr + " health points remaining for " + "you.");
+
+
+
+
+  };
+
+  
   console.log("You let out a victory cry.");
   console.log("That was the next dragons\' little brother. Don\'t get cocky.");
+  console.log(" Until next time warlock!");
+  console.log("THE END");
