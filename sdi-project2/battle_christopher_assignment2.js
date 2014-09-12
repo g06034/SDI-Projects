@@ -198,8 +198,8 @@
 
   };
 
-  
+
   console.log("You let out a victory cry.");
   console.log("That was the next dragons\' little brother. Don\'t get cocky.");
-  console.log(" Until next time warlock!");
+  console.log("Until next time warlock!");
   console.log("THE END");
